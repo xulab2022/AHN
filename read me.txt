@@ -1,0 +1,52 @@
+## contents
+- [Overview](#overview)
+- [File Contents](#file-contents)
+- [System Requirements](#system-requirements)
+- [Installation Guide](#installation-guide)
+- [Demo](#demo)
+- [Instructions for use](#Instructions-for-use)
+- [Code availability](#code-availability)
+
+# Overview
+We used these code to analyze data of fiber photometry and single unit recording. For fiber photometry, we mainly used the code to calculate the average signal of a specific zone, align the signal with behavior and plot heat map. For single unit recording, the data was manipulated with MATLAB toolbox (MClust-4.4) firstly. And then we used these code for further analysis, including aligning the behavior with spike, justifying whether the unit was excited or inhibited, and plotting the heat map that rank the units based on the z-score value from large to small. 
+
+# File Contents
+- [src]: all source code.
+- [demo]: data demos.
+
+# System Requirements
+ MATLAB 2009a. The results of the study were from the MATLAB 2009a. We still tested these code on MATLAB 2021a, however, there is something wrong when dealing with data from demo 4. 
+
+# Install
+extract AHN.zip to some directory.
+In Matlab, go to 'file>set path...>Add with Subfolders'
+select the directory with the src folder
+click 'Save'
+click 'Close'
+This step will be finished within minutes.
+
+# Demo
+Demo contains 7 subfolders. numbered from 1 to 7, including fiber photometry data and single unit recording data. Demo would be tested within minutes. Demo 1 will get an excel. Demo 2 will get figure and mat file. Demo 3 will get an excel. Demo 4 will get figure and mat file. Demo 5 will get figure. Demo 6 will get an excel and mat file. Demo 7 will get figure.
+
+# Instructions for use
+Open the main code named code_summary which contains 8 parts separated by %%
+
+1. Using part NO.1 of the code_summary for calculating each zone signal of open field and novel object, example data is in Demo subfolder ‘1‘. Now just put the correspond address of folders in ‘1’ into single quotation marks respectively, which is marked in the form of % followed by a name in code. Then run it.
+
+2. Using part NO.2 of the code_summary for aligning behavior with signal of each trial of each mouse, example data is in Demo subfolder ‘2‘. Just put the correspond address of folders in ‘2’ into suitable single quotation marks respectively, which is marked in the form of % followed by a name in code. Then run it.
+
+3. Using part NO.3 of the code_summary for average the signal aligned with behavior of all trials from all mice, example data is still in Demo subfolder ‘2‘. Just put the correspond address of folders in ‘2’ into suitable single quotation marks respectively, which is marked in the form of % followed by a name in code. the content of mouse_mat is from the result of code that aligning behavior with signal of each trial of each mouse. Then run it.
+
+4. Using part NO.4 of the code_summary for calculating each zone signal of epm, example data is in Demo subfolder ‘3‘. Just put the correspond address of folders in ‘3’ into suitable single quotation marks respectively, which is marked in the form of % followed by a name in code. Then run it.
+
+5. Using part NO.5 of the code_summary for heatmap of epm signal, exampla data is in Demo subfolder ‘4‘. Just put the correspond address of folders in ‘4’ into suitable single quotation marks respectively, which is marked in the form of % followed by a name in code. Then run it.
+
+6. Using part NO.6 of the code_summary for beh_align_spike, example data is in Demo subfolder ‘5‘. Put the address of figure folder inside the corresponded single quotation marks. And run it. Then chose the mat file in f1p1, and open it. The next, chose all mat file in f2p2, and open it. 
+
+7. Using part NO.7 of the code_summary for judging the neuron is excited or inhibited, example data is in Demo subfolder ‘6‘. Put the address of excel and mat folders in ‘6’ into the corresponded single quotation marks respectively. And run it. Then chose the mat file in f1p1, and open it. The next, chose all mat file in f2p2, and open it.  
+
+8. Using part NO.8 of the code_summary for heatmap of ranking unit, example data is in Demo subfolder ‘7‘. Put the address of fr_mat folder into the corresponded single quotation marks. And run it.
+
+#Code availability
+The code related to the results of the study is available from the corresponding author upon reasonable request.
+
